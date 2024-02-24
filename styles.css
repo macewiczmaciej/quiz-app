@@ -1,0 +1,84 @@
+/* style.css */
+
+/* Global Styles */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/* Header Styles */
+.header {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.title {
+	font-size: 24px;
+	color: #333;
+}
+
+.score {
+	font-size: 18px;
+	color: #666;
+}
+
+.round {
+	font-size: 18px;
+	color: #666;
+}
+
+/* Question Styles */
+.question {
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+}
+
+.question-content {
+	font-size: 20px;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.answers {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 0.7em;
+}
+
+.btn-answer {
+	font-size: 1em;
+	color: #fff;
+	background-color: #007bff;
+	border: none;
+	border-radius: 1em;
+	padding: 5% 2%;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.btn-answer:hover {
+	background-color: #0056b3;
+}
+
+/* Text Message Styles */
+.text-message {
+	font-size: 16px;
+	color: #ff0000;
+	margin-top: 20px;
+}
+.correct-answer {
+	border: 5px solid green;
+}
+.wrong-answer {
+	border: 5px solid #bc3e3e;
+}
