@@ -87,6 +87,9 @@ const displayQuestion = () => {
 	const q = questions[currentQuestion]
 	textQuestion.textContent = q.question
 
+	// shuffle options
+	q.options.sort(() => Math.random() - 0.5)
+
 	for (let i = 0; i < q.options.length; i++) {
 		btnsAnswer[i].textContent = q.options[i]
 	}
